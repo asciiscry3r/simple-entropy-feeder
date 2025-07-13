@@ -1,0 +1,9 @@
+[Unit]
+Description=Start/Restart Simple Entropy feeder service
+
+[Timer]
+Unit=simpleentropyfeeder.service
+OnUnitInactiveSec=30
+
+[Install]
+WantedBy=timers.target

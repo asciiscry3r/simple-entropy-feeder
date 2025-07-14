@@ -3,7 +3,8 @@ Description=Start/Restart Simple Entropy feeder service
 
 [Timer]
 Unit=simpleentropyfeeder.service
-OnUnitInactiveSec=30
+OnBootSec=1
+OnUnitInactiveSec=1
 
 [Install]
 WantedBy=timers.target
